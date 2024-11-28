@@ -221,7 +221,8 @@ ol, ul {
     margin-bottom: 2rem;
 }
 
-.tabs {
+/* used Claude AI to help with the radio button styling */
+.browse-menu {
     --bar-color: #333;
     --background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #f5f5f5);
     display: flex;
@@ -231,28 +232,28 @@ ol, ul {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.tab {
+.options {
     position: relative;
     cursor: pointer;
 }
 
-.tab-input {
+.option-input {
     display: none;
 }
 
-.tab-box {
+.option-box {
     padding: 1rem 2rem;
     transition: 0.3s;
     border-bottom: 2px solid transparent;
 }
 
-.tab-input:checked + .tab-box {
+.option-input:checked + .option-box {
     background: var(--background);
     border-color: var(--bar-color);
     font-weight: bold;
 }
 
-.tab-content {
+.option-content {
     display: none;
     position: absolute;
     left: 0;
@@ -260,7 +261,7 @@ ol, ul {
     padding: 2rem;
 }
 
-.tab-input:checked ~ .tab-content {
+.option-input:checked ~ .option-content {
     display: block;
 }
 
