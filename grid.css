@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.grid{
+    display: grid;
+
+}
+
+
+.grid.add-gutters{
+    grid-column-gap: 0.75rem;
+    grid-row-gap: 0.6rem;
+}
+
+
+@media (width < 400rem){
+    .grid.nav-grid{
+        display: flex;
+        justify-content: center;
+        text-align:center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (width < 20rem){
+    .grid.footer-grid{
+        display: flex;
+        justify-content: center;
+        text-align:center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* about-section */
+@media (max-width: 30rem) { /* Adjust breakpoint as needed */
+    .about-section {
+        flex-direction: column; /* Stacks title and paragraph vertically */
+        align-items: flex-start; /* Aligns content to the left */
+    }
+}
+
+
+

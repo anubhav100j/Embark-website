@@ -1,0 +1,377 @@
+*{
+    
+    box-sizing: border-box;
+    
+}
+body {
+	font-family: Helvetica, Verdana, sans-serif;
+	margin: 0;  /* NO Margin for footer */
+	font-size: 1.25rem;
+}
+
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+
+/** Requirements / ........**/
+h2 {
+	font-size: 1.8rem;
+    text-align: center;
+	margin-bottom: 0;
+}
+
+
+h3 {
+	font-size: 1.6rem;
+	margin-bottom: 0.75rem;
+    /* margin: 1.5rem; */
+}
+
+
+p{
+	max-width: 40rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+ol, ul {
+    max-width: 50rem;
+    font-size: 1rem;
+}
+/************ Navigation bar -style ***********/
+.header{
+    background-color: #000000;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    color:white;
+    display: flex;
+}
+.nav {
+    max-width: 1200px;
+    margin: 0px 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    gap: 15rem;
+    margin-left: 14em;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+}
+
+/************* Hero Section *********************/
+/*used claude ai to get help align the image in the background*/
+.hero {
+    /* Background image styling */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),  /* Dark overlay for better text readability */
+        rgba(0, 0, 0, 0.5)
+    ),
+    url('Embark Sustainability Event Photos 2/EmbarkSustainability_SurreyLearningGarden.jpg');  /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Layout styling */
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+/*     
+    align-items: center;
+    text-align: center; */
+    padding-left: 4rem;
+    padding-top: 8em;;
+    
+    /* Text styling */
+    color: white;
+}
+
+.hero-title {
+    /* font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold; */
+    margin-right: 18em;
+}
+
+.hero p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin-left: 0px;
+    padding-left: 0px;
+    line-height: 1.6;
+    margin-right: 18em;
+}
+/************ Browse by ************************/
+/*the scroll is learnt from the website https://webdesign.tutsplus.com/horizontal-scrolling-card-ui-flexbox-and-css-grid--cms-41922t */
+  .grants-grid {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 25px 0px;
+    max-width: 100%;
+    gap: 20px;
+    margin: 2rem 2em;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.grant-card {
+    flex: 0 0 auto; 
+    width: 350px;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333;
+    white-space: normal; /* used claude to trouble shoot the text wrap issue */
+    position: relative;  /* used claude to trouble shoot the text wrap issue */
+    min-height: 500px;   /* used claude to trouble shoot the text wrap issue */
+}
+
+
+.grant-card h3 {
+    font-size: 1.25rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.grant-card ul {
+    width: 100%;
+    margin: 0; /* Remove default margin */
+    padding-left: 20px; /* Add left padding for bullet points */
+    list-style-type: disc; /* Ensure bullet points display correctly */
+    word-wrap: break-word; /* Handle long words properly */
+}
+
+.grant-card li {
+    word-break: break-word; /* Break long text into multiple lines */
+    line-height: 1.4; /* Adjust line height for readability */
+    margin-bottom: 4px; /* Spacing between list items */
+}
+
+.grant-card h3, .grant-card p, .grant-card ul {
+    margin-bottom: 12px; /* Space between elements */
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+    margin: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.tag-youth {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.tag-bipoc {
+    /* background-color: #fce4ec;
+    color: #c2185b; */
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+.apply-button {
+    position: absolute;
+    bottom: 20px; /* Smaller value to keep it inside the card */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgba(168, 105, 183);
+    border: 1px solid rgba(168, 105, 183);
+    background-color: white;
+    transition: all 0.3s ease;
+}
+/************ Browse by different categories - styling ***********/
+
+/* this is learnt from the https://codepen.io/rsalgado/pen/EqdKjX */
+.browse-section {
+    max-width: 100%;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.browse-section h2 {
+    margin-bottom: 2rem;
+}
+
+.tabs {
+    --bar-color: #333;
+    --background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #f5f5f5);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.tab {
+    position: relative;
+    cursor: pointer;
+}
+
+.tab-input {
+    display: none;
+}
+
+.tab-box {
+    padding: 1rem 2rem;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-input:checked + .tab-box {
+    background: var(--background);
+    border-color: var(--bar-color);
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+}
+
+.tab-input:checked ~ .tab-content {
+    display: block;
+}
+
+/* Existing category grid styles */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.category-cards {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: left;
+}
+
+/************ Requirements - styling ***********/
+.Requirement-subtitle{
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+    margin: 0.5rem;
+}
+
+.Requirement-column{
+    width: 16rem;
+    height: 11rem;
+    background-color: grey;
+    border-radius: 0.25rem;
+    border: 0.25rem solid;
+    border-color: black;
+
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.Requirement-content-upperhalf{
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Requirement-content-lowerhalf{
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+/************ Footer - styling ***********/
+.footer{
+    padding: 2.5rem;
+	color: white;
+    background-color: rgb(0,0,0);
+}
+
+.about-section{
+	display: flex;
+	flex: 1;
+	margin-bottom: 2rem;
+    /* width: 90%; */
+}
+
+.about-paragraph{
+    display: flex;
+	flex: 1;
+    width: 90%;
+    flex-wrap: wrap;
+    flex-basis: 20rem;
+}
+
+.contact-address-section{
+    display: flex;
+    flex: 1;
+	padding: 0;
+}
+
+
+.footer-title{
+	font-size: 1rem;
+	padding: 0;
+	margin: 1rem;
+    margin-left: 0;
+
+}
+.center-copyright{
+	text-align: center;
+	font-size: 0.75rem;
+    /* max-width: 30rem; shorten the line-length & content compress with the browser window */
+    margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Footer blocks - styling */
+.white-blocks {
+    display: flex;
+	justify-content: center;
+    margin-bottom: 1.5rem;
+	padding: 0.5rem;
+	gap: 1.5rem;
+}
+
+.block {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+	border-radius: 0.25rem;
+}
