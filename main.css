@@ -370,100 +370,154 @@ ol, ul {
 
 
 
+/** Requirements / ........**/
+h2 {
+	font-size: 1.8rem;
+    /* text-align: center; */
+	margin-bottom: 0;
+    color: black;
+}
+
+
+h3 {
+	font-size: 1.6rem;
+	margin-bottom: 0.75rem;
+    /* margin: 1.5rem; */
+}
+
+
+p{
+	max-width: 40rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+ol, ul {
+    max-width: 50rem;
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+
 
 /************ Requirements - styling ***********/
 .Requirement-subtitle{
     text-align: center;
-    font-size: 1rem;
-    color: grey;
+    font-size: 1.2rem;
+    color: rgb(84, 87, 87);
     margin: 0.5rem;
 }
+/***** Requirements column - styling ****/
+.Requirement-container{
+    display: flex;
+    Flex-wrap: wrap; /* Allow items to wrap to next line */
+    flex-direction: row;  /* Horizontal layout */
+    
+    margin: 2rem;
+    margin-top: 0.7rem;
+    margin-left: 3rem;
+    gap: 0.75rem; /* Adds space between columns */
+  }
 
 .Requirement-column{
     width: 16rem;
     height: 11rem;
-    background-color: grey;
+    background-color: #F8EEE1;
     border-radius: 0.25rem;
-    border: 0.25rem solid;
-    border-color: black;
-
-    margin-left: 2.5rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.Requirement-content-upperhalf{
-    font-size: 0.7rem;
+    border: 0.25rem solid rgb(19,121,95);
+    
+    /* margin-left: 2.5rem; */
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
+    overflow: auto; 
+    box-sizing: border-box; 
 }
 
-.Requirement-content-lowerhalf{
-    font-size: 0.7rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+.Requirement-column ul {
+    font-size: 0.8rem;
+    /* list-style-type: none; remove list style */
+    margin-left: 0.2rem;
+    /* padding-top: 0.75rem; */
+  }
 
+.Requirement-column h2 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+    margin-left: 1.5rem;
 }
+
+.Requirement-column h3 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+    margin-left: 1.75rem;
+}
+
+
+/***** Requirements grant link - styling ****/
+.Grant-link{
+    color: rgb(19,121,95);
+	transition-property: color;
+	transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+.Grant-link:hover, .Grant-link:focus{
+    color: rgb(50,50,50); 
+	text-decoration: none;
+}
+
+
 
 
 
 /************ Footer - styling ***********/
 .footer{
     padding: 2.5rem;
+	margin-top: 2rem;
 	color: white;
-    background-color: rgb(0,0,0);
+    background-color: rgb(19,121,95);
 }
-
+.footer h1{
+    font-size: 1.6rem;
+	margin-bottom: 0.75rem;
+    text-align: left;
+	margin-left: 0;
+    color: white;
+}
 .about-section{
 	display: flex;
 	flex: 1;
 	margin-bottom: 2rem;
     /* width: 90%; */
 }
-
-.about-paragraph{
+.footer p{
+	font-size: 0.9rem;
     display: flex;
-	flex: 1;
     width: 90%;
-    flex-wrap: wrap;
-    flex-basis: 20rem;
+    flex-wrap: wrap; /* Allow items to wrap to next line */
+
+	line-height: 1.25;
+    margin-left: 0;
+	margin-right: 3rem;
+    padding-left: 0;
+	padding-top: 0.6rem;
 }
-
-.contact-address-section{
-    display: flex;
-    flex: 1;
-	padding: 0;
-}
-
-
-.footer-title{
-	font-size: 1rem;
+.about-title{
+	font-size: 1.1rem;
 	padding: 0;
 	margin: 1rem;
     margin-left: 0;
-
+	margin-bottom: 0.3rem;
 }
 .center-copyright{
 	text-align: center;
-	font-size: 0.75rem;
+	font-size: 0.8rem;
     /* max-width: 30rem; shorten the line-length & content compress with the browser window */
     margin-left: auto;
 	margin-right: auto;
-}
-
-
-/* Footer blocks - styling */
-.white-blocks {
-    display: flex;
-	justify-content: center;
-    margin-bottom: 1.5rem;
-	padding: 0.5rem;
-	gap: 1.5rem;
-}
-
-.block {
-    width: 40px;
-    height: 40px;
-    background-color: white;
-	border-radius: 0.25rem;
+	margin-bottom: 0.5rem;
 }
