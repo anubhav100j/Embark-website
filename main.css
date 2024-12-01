@@ -168,7 +168,9 @@ ol, ul {
 .grant-card li {
     word-break: break-word; /* Break long text into multiple lines */
     line-height: 1.4; /* Adjust line height for readability */
-    margin-bottom: 4px; /* Spacing between list items */
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-bottom: 2px; /* Spacing between list items */
 }
 
 .grant-card h3, .grant-card p, .grant-card ul {
@@ -217,7 +219,7 @@ ol, ul {
     margin: 4rem auto;
     text-align: center;
     padding: 0 1rem;
-    min-height:45rem;
+    min-height:35rem;
     overflow-x: hidden; /* Prevent horizontal expansion */
 }
 
@@ -251,37 +253,63 @@ ol, ul {
     transition: 0.3s;
     border-bottom: 2px solid transparent;
 }
-
+/* used claude to see how to adjust the visiblity of the cards */
+.option-input:checked ~ .option-content {
+    display: block;
+} 
 .option-input:checked + .option-box {
     background: var(--background);
     border-color: var(--bar-color);
     font-weight: bold;
 }
 
+
+
 .option-content {
+    display: none;
     position: absolute;
-    left: 118%;
-    transform: translateX(-50%);
+    left: 2rem;
+    transform: translateX(-37%);
     width: 100vw;
-    max-width: 1600px;
-    padding-left: 2rem;
+    /* max-width: 1600px; */
+    /* padding-left: 2rem; */
 }
 
-.option-input:checked ~ .option-content {
-    display: block;
-}
 
 /* Existing category grid styles */
 .categories-grid {
     width: 100%;
     display: grid;
     grid-auto-flow: column;
-    padding: 25px 0px;
+    padding-left: 5rem;
+    /* padding: 2rem 5rem; */
     max-width: 100%;
     gap: 20px;
     margin: 2rem 2em;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+}
+
+.amount-grid {
+    width: 76%;
+    display: grid;
+    grid-auto-flow: column;
+    /* padding: 25px 0px; */
+    padding-left: 0rem;
+    max-width: 100%;
+    gap: 20px;
+    /* margin: 2rem 2em; */
+    /* overflow-x: scroll; */
+    /* scroll-snap-type: x mandatory; */
+}
+.dates-grid {
+    width: 49%;
+    display: grid;
+    grid-auto-flow: column;
+    /* padding: 25px 0px; */
+    padding-left: 0rem;
+    max-width: 100%;
+    gap: 20px;
 }
 
 
@@ -308,7 +336,9 @@ ol, ul {
 
 .category-cards {
     /* display: grid; */
-    grid-auto-flow: column;
+    /* grid-auto-flow: column; */
+    flex: 0 0 350px;
+    display: flex;
     width: 350px;
     height: 300px;
     min-height: 300px;
