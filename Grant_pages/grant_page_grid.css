@@ -18,8 +18,8 @@
     grid-row-gap: 0.6rem;
 }
 
-@media (width > 400rem){
-    .grid.nav-grid{
+@media (min-width: 400rem) {
+    .grid.nav-grid {
         display: flex;
         justify-content: center;
         text-align: center;
@@ -30,47 +30,35 @@
 
 
 
-
 /********** Dates-and-Requirements - styling **********/
-@media (min-width: 40rem) {
-    .requirement-date-section {
-        max-width: 30rem;
-        align-items: flex-start;
-    }
-    /* .requirement-date-section h1,
-    .requirement-date-section p {
 
+
+
+/* @media (min-width: 40rem) {
+    .requirement-date-section 
+    .description-link-section{
+        display: flex;
+    justify-content: center;
+    width: 100%;
     } */
+
+/* } */
+
+
+/* Media query for larger screens (800px and above) */
+@media (min-width: 70rem) { /* 50rem = 800px */
+    .position-container {
+        flex-direction: row !important; /* Align side-by-side */
+        justify-content: flex-start; /* Align to the left */
+        align-items: flex-start; /* Align tops of sections */
+        gap: 2rem; /* Space between the containers */
+    }
 }
 
 
 
 
 
-
-@media (min-width: 50rem) {
-    .description-link-section {
-        align-items: flex-end; 
-    }
-
-    .description-link-section p {
-        margin: 0.5rem 0 0.5rem auto; 
-        padding: 0 1rem; 
-    }
-}
-/* @media (min-width: 1024px){
-    .title-category-section {
-        align-items: flex-end; 
-    } */
-
-
-
-/* @media (width > 400rem){
-    body {
-        max-width: 100rem;
-        margin: 1rem auto; /* auto: center the content */
-    /* } */
-/* } */ 
 
 /********* Footer **********/
 /* About */
