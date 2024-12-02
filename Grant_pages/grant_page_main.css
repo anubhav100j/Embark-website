@@ -200,6 +200,13 @@ h2 {
     gap: 20px;
     margin-bottom: 10px;
 }
+.GC-tags{
+	display: flex;
+	margin-left:0%;
+    gap: 20px;
+    margin-bottom: 10px;
+
+}
 
 .tag {
     color: rgb(19,121,95);
