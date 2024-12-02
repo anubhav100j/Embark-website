@@ -131,7 +131,7 @@ ol, ul {
 .grant-card {
     flex: 0 0 auto; 
     width: 350px;
-    background: white;
+    background: #F8EEE1;
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -141,10 +141,11 @@ ol, ul {
     text-align: center; 
     border-style: solid;
     border-width: 2px;
-    border-color: #333;
+    border-color: #13795F ;
     white-space: normal; /* used claude to trouble shoot the text wrap issue */
     position: relative;  /* used claude to trouble shoot the text wrap issue */
     min-height: 500px;   /* used claude to trouble shoot the text wrap issue */
+    cursor: pointer;
 }
 
 
@@ -183,18 +184,21 @@ ol, ul {
     border-radius: 8px;
     margin: 0.25rem;
     font-size: 0.875rem;
+    /* border-color: ; */
+    border: 1px solid #13795F;
 }
 
 .tag-youth {
-    background-color: #e3f2fd;
-    color: #1976d2;
+    background-color: #eefefa;
+    color:  #13795F;
+    
 }
 
 .tag-bipoc {
     /* background-color: #fce4ec;
     color: #c2185b; */
-    background-color: #e3f2fd;
-    color: #1976d2;
+    background-color: #eefefa;
+    color:  #13795F;
 }
 .apply-button {
     position: absolute;
