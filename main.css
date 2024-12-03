@@ -676,7 +676,14 @@ margin-bottom: 0.5rem;
   }
 
   .amount-grid {
-    width: 85%;
+    /* width: 85%; */
+    width: 100%; /* Take full width of parent */
+    padding: 0 1rem;
+    margin: 2rem auto;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
   }
 
   .dates-grid {
@@ -696,7 +703,7 @@ margin-bottom: 0.5rem;
   }
 
   .amount-subtitle {
-    padding-right: 12rem;
+    padding-right: 0rem;
   }
 
   .date-subtitle {
@@ -729,13 +736,18 @@ margin-bottom: 0.5rem;
   }
 
   .option-content.dates {
-    transform: translateX(-50%);
+      width: max-content;
+      transform: translateX(-47%);
+      overflow-x: hidden;
+  
   }
   
   .option-content.amount {
-    transform: translateX(-45%);
-  }
+    transform: translateX(-49%);
+    overflow-x: hidden;
+    width: max-content;
 }
+
 
 @media (max-width: 48rem) {
   .nav {
