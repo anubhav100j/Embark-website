@@ -432,6 +432,9 @@ transition-timing-function: ease-out;
 .category-cards ul {
   margin-bottom: 0.75rem;
 }
+.category-cards p{
+  font-weight: lighter;
+}
 
 .view-button {
   position: absolute;
@@ -648,6 +651,7 @@ margin-bottom: 0.5rem;
     gap: 8rem;
     margin-left: 8em;
   }
+}
 
   /* Hero section adjustments */
   .hero-title {
@@ -666,7 +670,7 @@ margin-bottom: 0.5rem;
 
   .grant-card {
     width: 18.75rem; /* 300px */
-    min-height: 28.125rem; /* 450px */
+    min-height: 32.125rem; /* 450px */
   }
 
   /* Browse section adjustments */
@@ -693,7 +697,7 @@ margin-bottom: 0.5rem;
   .category-cards {
     width: 18.75rem; /* 300px */
     height: 17.5rem; /* 280px */
-    min-height: 17.5rem;
+    min-height: 20.5rem;
     max-height: 17.5rem;
   }
 
@@ -749,7 +753,7 @@ margin-bottom: 0.5rem;
 }
 
 
-@media (max-width: 48rem) {
+@media (max-width: 40rem) {
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -832,24 +836,26 @@ margin-bottom: 0.5rem;
   }
 
   .option-content {
-    transform: translateX(-33%);
+    transform: translateX(-26%);
   }
 
   .option-content.dates {
-    transform: translateX(-74%);
+    transform: translateX(-66%);
   }
   
   .option-content.amount {
-    transform: translateX(-45%);
+    transform: translateX(-50%);
   }
 
   .date-subtitle{
-    margin: 1rem;
-    padding: 0;
+    /* /* margin: 1rem; */
+    max-width: 88%;
+    padding-left: 2.5rem;
+    padding-right: 0rem; 
   }
 
   .dates-grid{
-    width: 80%;
+    width: 86%;
   }
 
   .category-cards {
@@ -977,5 +983,155 @@ margin-bottom: 0.5rem;
 
   .amount-subtitle {
     padding: 0.5rem;
+  }
+}
+
+/* 320px */
+@media (max-width: 20rem) {
+  /* Header and Navigation */
+  .header {
+    padding: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding-left: 0.5rem;
+    padding-top: 1.5em;
+    min-height: 20rem;
+  }
+
+  .hero-title {
+    font-size: 1.2em;
+    margin-right: 0;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    margin-right: 0;
+    padding: 0.5rem;
+  }
+
+  /* Grant Cards */
+  .grants-grid {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .grant-card {
+    width: 16rem;
+    min-height: 30rem;
+    padding: 1rem;
+  }
+
+  .grant-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .grant-card li {
+    font-size: 0.8rem;
+  }
+
+  /* Browse Section */
+  .browse-menu {
+    gap: 0;
+  }
+
+  .option-box {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .option-content {
+    transform: translateX(-25%);
+  }
+
+  .option-content.dates {
+    transform: translateX(-59%);
+  }
+
+  .option-content.amount {
+    transform: translateX(-56%);
+
+  }
+  .amount-subtitle {
+    padding: 0.5rem;
+}
+
+  /* Category Cards */
+  .category-cards {
+    width: 16rem;
+    height: 16rem;
+    padding: 1rem;
+  }
+
+  .categories-grid,
+  .amount-grid,
+  .dates-grid {
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  /* Subtitles */
+  .category-subtitle,
+  .amount-subtitle,
+  .date-subtitle {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .date-subtitle {
+    max-width: 49%;
+    margin-left: 10rem;
+    /* margin: 0.5rem auto; */
+}
+
+  /* Requirement Section */
+  .Requirement-container {
+    margin: 1rem 0.5rem;
+  }
+
+  .Requirement-column {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* Buttons */
+  .apply-button a,
+  .view-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 1.5rem;
+  }
+
+  .footer h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  /* General Text */
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 }
