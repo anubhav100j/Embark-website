@@ -1,0 +1,484 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	font-size: 1.25rem;
+}
+
+
+
+/********** DONT DELETE **********/
+h2 {
+	font-weight: normal;
+} 
+
+
+.logo img{
+    height: 3rem;
+    width: auto; 
+}
+
+.header{
+    background-color: rgb(19,121,95);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    color:white;
+    display: flex;
+	flex-wrap: wrap;
+}
+.nav {
+    max-width: 1200px;
+    margin: 0px 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header {
+    background-color: rgb(19,121,95);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    color: white;
+    display: flex;
+    width: 100%; /* Ensure header takes full width */
+}
+
+.nav {
+    width: 100%; /* Make nav take full width of header */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the nav and use shorthand */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; /* Use padding instead of margin for spacing */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15rem;
+    margin-left: 14em;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+}
+
+
+/********** Top navigation bar **********/
+.logo img{
+    height: 3rem;
+    width: auto; 
+}
+
+.header{
+    background-color: rgb(19,121,95);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    color:white;
+    display: flex;
+	flex-wrap: wrap;
+}
+.nav {
+    max-width: 1200px;
+    margin: 0px 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    gap: 15rem;
+    margin-left: 14em;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+}
+
+
+/********* Navigation section **********/
+.back-section{
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+	margin-left: 1.5rem;
+}
+
+
+/* < Back button - styling */
+.nav-back{
+	width: 6rem;
+	padding: 0.5rem;
+	font-size: 1.25rem;
+
+	color: black;
+	background-color: rgb(248, 238, 225);
+	border: 0.25rem solid rgb(19,121,95);
+	border-radius: 0.4rem;
+
+	display: flex;
+	justify-content: center;
+    text-align: center;
+
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+}
+
+.nav-back:focus, .nav-back:hover {
+	color: white;
+	background-color: rgb(50,50,50);
+}
+
+
+/**** All grants|LEVEL youth grant (Develop) ****/
+.all-grants-container{
+	margin-top: 0.5rem; 
+}
+.all-grants {
+    font-size: 1rem;
+    color: rgb(179, 179, 179);
+    margin-left: 0;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+.level-youth {
+    color: rgb(77, 77, 77);
+	font-size: 1rem;
+	margin-top: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+/**** Vancouver Foundation | A BC-Award ****/
+.center-text{
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+
+
+
+
+/********** Title and Amount and Category **********/
+.title-category-section{
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+
+}
+
+/** Title */
+.title-category-section h1{
+	font-size: 2.6rem;
+	text-align: center;
+	margin: 0.75rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.5rem;
+}
+
+/** Subtitle  **/
+.title-category-section h2{
+	font-size: 2rem;
+	text-align: center;
+	margin: 0.75rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.5rem;
+}
+
+.title-category-section h2 .amount {
+	font-weight: bold;
+}
+
+/** Category  **/
+.category-container{
+	display: flex;
+    /* flex-direction: row; */
+    justify-content: center; 
+    align-items: center; 
+	flex-wrap: wrap;
+
+	
+	gap: 0.75rem;
+	padding-top: 0.5rem;
+	margin-bottom: 1.5rem;
+
+
+}
+.nav-category {
+	display: inline-block;
+	text-align: center;
+	
+
+	width: 7rem;
+	padding: 0.3rem;
+
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: rgb(19,121,95);
+	background-color: rgb(248, 238, 225);
+	border: 0.25rem solid rgb(19,121,95);
+	border-radius: 0.5rem;
+
+
+    padding: 0.5rem 1rem;
+	/* I learnt how to make the text fit in the block from https://developer.mozilla.org/en-US/docs/Web/CSS/width */
+    min-width: fit-content;
+	
+}
+
+
+
+
+
+
+/********** Dates-and-Requirements **********/
+.requirement-container{
+	/* align-items: center;
+	display: flex;
+    justify-content: center;
+    width: 100%; */
+	max-width: 35rem;
+    text-align: left;
+	
+}
+
+.requirement-date-section{
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 0;
+
+	background-color: rgb(0 127 99);
+    border-radius: 0.5rem;
+    max-width: 35rem;
+	height: 20rem auto;
+
+    text-align: center;
+}
+
+
+.requirement-date-section h1{
+	color: white;
+	font-size: 1.4rem;
+	font-weight: bold;
+	width: 100%;
+	text-align: left;
+	padding-bottom: 0.5rem;
+	padding-left: 2rem;
+	padding-top: 2rem;
+	margin-bottom: 0;
+}
+
+.requirement-date-section p, ul{
+	color: white;
+	font-size: 1.25rem;
+	text-align: left;
+
+	width: 100%;
+	line-height: 1.35;
+	padding-top: 0.25rem;
+	padding-left: 3rem;
+	padding-right: 2rem;
+	padding-bottom: 0.5rem;
+	margin-top: 0;
+}
+
+
+
+.apply-ddl{
+	color: white;
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 1.35;
+	text-align: left;
+
+	padding-bottom: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-bottom: 0;
+}
+
+.award-time {
+	color: white;
+	font-size: 1.3rem;
+	text-align: left;
+	line-height: 1.35;
+
+	padding-bottom: 0.3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.grant-term{
+	color: white;
+	font-size: 1.3rem;
+	text-align: left;
+	line-height: 1.35;
+	
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	
+}
+
+
+
+
+
+
+
+/********** Description and Grant link **********/
+.description-container{
+	max-width: 35rem;
+    text-align: left;
+}
+
+
+.description-link-section{
+	margin-top: 0.6rem;
+	display: inline-block;
+}
+
+
+.description-link-section h1{
+	font-size: 1.25rem;
+	font-weight: bold;
+    font-weight: 700;
+	text-align: left;
+
+	margin-left: 2rem;
+	margin-top: 0.75rem;
+	margin-bottom: 0.3rem;
+}
+
+.description-link-section p{
+	font-size: 1rem;
+    line-height: 1.5;
+    width: auto; /* Allows para to shrink */
+    max-width: 50rem;
+	text-align: left;
+	font-weight: lighter;
+
+	margin-top: 0;
+	margin-bottom: 0.85rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+
+
+
+.nav-link{
+	text-align: left;
+	margin-top: 1.2rem;
+}
+
+
+/*** Grant Link ***/
+.grant-link{
+	font-size: 1rem;
+
+	margin: 1.5rem;
+	margin-right: 0;
+	margin-left: 2rem;
+	padding: 0.9rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	
+	color: black;
+	background-color: rgb(248, 238, 225);
+	border: 0.25rem solid rgb(19,121,95);
+	border-radius: 0.4rem;
+
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+}
+
+
+.grant-link:hover, .grant-link:focus{
+	color: white;
+	background-color: rgb(50,50,50);
+}
+
+
+
+.position-container{
+	display: flex !important;
+    flex-direction: column; /* vertically aligned */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem; 
+    margin: 0 auto;
+	margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/************ Footer ***********/
+.footer{
+    padding: 2.5rem;
+	margin-top: 2rem;
+	color: white;
+    background-color: rgb(19,121,95);
+}
+.footer h1{
+    font-size: 1.6rem;
+	margin-bottom: 0.75rem;
+    text-align: left;
+	margin-left: 0;
+}
+.about-section{
+	display: flex;
+	flex: 1;
+	margin-bottom: 2rem;
+}
+.footer p{
+	font-size: 0.9rem;
+
+	width: auto; /* Allows para to shrink */
+    max-width: 60rem;
+
+	line-height: 1.4;
+    margin-left: 0;
+	margin-right: 3rem;
+    padding-left: 0;
+	padding-top: 0.25rem;
+}
+.about-title{
+	font-size: 1.1rem;
+	padding: 0;
+	margin: 1rem;
+    margin-left: 0;
+	margin-bottom: 0;
+}
+.center-copyright{
+	text-align: center;
+	font-size: 0.8rem;
+    margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.5rem;
+}
